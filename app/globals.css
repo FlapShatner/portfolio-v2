@@ -4,14 +4,12 @@
 
 :root {
   --foreground-hsl: 0, 0%, 100%;
-  --background-start-hsl: 216, 18%, 17%;
-  --background-end-hsl: 215, 18%, 20%;
+  --background-hsl: 216, 18%, 17%;
+
 }
 
 
 body {
   color: hsl(var(--foreground-hsl));
-  background: linear-gradient(to bottom,
-      transparent,
-      hsl(var(--background-end-hsl))) hsl(var(--background-start-hsl));
+  background: hsl(var(--background-hsl))
 }
