@@ -5,11 +5,9 @@
 :root {
   --foreground-hsl: 0, 0%, 100%;
   --background-hsl: 216, 18%, 17%;
-
 }
-
 
 body {
   color: hsl(var(--foreground-hsl));
-  background: hsl(var(--background-hsl))
+  background: hsl(var(--background-hsl));
 }
