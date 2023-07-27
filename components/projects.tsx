@@ -6,12 +6,12 @@ interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = () => {
  return (
-  <div className='flex flex-col gap-12'>
+  <div className='flex flex-col gap-12 lg:gap-8'>
    {projects.map((project) => (
     <div
-     className=' bg-bg-secondary '
+     className=' bg-bg-secondary flex flex-col lg:grid lg:grid-cols-3 '
      key={project.title}>
-     <div className='border-4 border-white m-8'>
+     <div className='border-4 border-white m-8 lg:m-0 lg:col-span-1 '>
       <Image
        src={project.image}
        alt={`Screenshot of ${project.title}`}
@@ -19,10 +19,10 @@ const Projects: FC<ProjectsProps> = () => {
        height={838}
       />
      </div>
-     <div className='p-3'>
+     <div className='p-3 lg:col-span-2'>
       {project.description.map((p, i) => (
        <p
-        className='text-xs leading-5 p-4'
+        className='text-xs md:text-sm leading-5 p-4'
         key={i}>
         {project.description[i]}
        </p>
