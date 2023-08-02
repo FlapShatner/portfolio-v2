@@ -11,10 +11,10 @@ const Menu: FC<MenuProps> = () => {
  const { width } = useWindowSize()
 
  const [open, setOpen] = useState(false)
- const isMobile = width < 660
+ const isMobile = width < 680
 
  return (
-  <div className='w-full relative'>
+  <div className='w-full max-w-7xl fixed pt-6 pr-8 bg-bg-primary z-10'>
    {isMobile && (
     <div
      onClick={() => setOpen(!open)}

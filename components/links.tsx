@@ -19,8 +19,8 @@ const Link: FC<LinkProps> = ({ title, url, isMobile }) => {
   <a href={url}>
    <div
     className={twMerge(
-     'text-sm md:text-base items-center flex gap-2 sm:gap-1 md:gap-2 text-white border-white border-2 px-2 opacity-70 hover:opacity-100 ',
-     isMobile && 'w-[200px]'
+     'text-lg md:text-xl items-center flex gap-2 sm:gap-1 md:gap-2 text-white border-white border-2 px-2 opacity-70 hover:opacity-100 bg-bg-secondary font-secondary',
+     isMobile && 'w-[300px] justify-center py-2'
     )}>
     {title}
     <Image
@@ -38,7 +38,7 @@ const Links: FC<LinksProps> = ({ isMobile, open }) => {
  return (
   <div
    className={twMerge(
-    !isMobile ? ' flex flex-row justify-end gap-8 w-full mb-6' : 'flex flex-col gap-6 items-end absolute right-6 bg-[#242a33] p-6',
+    !isMobile ? ' flex flex-row justify-end gap-8 w-full mb-6' : 'flex flex-col gap-6 items-end fixed right-2 bg-bg-primary p-6 border-2 border-white',
     isMobile && !open ? 'hidden' : 'flex'
    )}>
    {links.map((link) => (

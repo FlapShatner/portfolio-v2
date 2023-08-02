@@ -8,9 +8,14 @@ module.exports = {
     'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
    },
    colors: {
+    'bg-primary': '#242a33',
     'bg-secondary': '#2A323D',
     'text-hl': '#65acca',
     'text-hl-hover': '#47bbec',
+   },
+   fontFamily: {
+    primary: ['var(--ps)'],
+    secondary: ['var(--fira)'],
    },
   },
  },

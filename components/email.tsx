@@ -19,23 +19,23 @@ const Email: FC<EmailProps> = () => {
  }
 
  return (
-  <div className='py-12 items-center gap-3 flex '>
+  <div className='py-12'>
    <a
-    className=' text-text-hl  underline clamped'
+    className=' text-text-hl underline clamped'
     href='mailto:jordan@jrobertsweb.dev'>
     jordan@jrobertsweb.dev
    </a>
-   <div
+   <button
     onClick={handleCopy}
-    className='flex-col flex text-xs text-text-hl items-center justify-end cursor-pointer p-1 border-2 border-transparent hover:border-text-hl rounded-lg'>
+    className='ml-auto mt-2 flex gap-2 w-48 text-lg text-text-hl items-center justify-center cursor-pointer p-1 border-2 border-text-hl font-secondary opacity-60 hover:opacity-100 focus-within:opacity-100 focus-visible:outline-text-hl'>
+    {copied ? 'Done!' : 'Copy address'}
     <Image
      src={'/copy-px-bl.png'}
      width={20}
      height={20}
      alt='Copy email address to clipboard'
     />
-    {copied ? 'Done!' : 'Copy'}
-   </div>
+   </button>
   </div>
  )
 }
