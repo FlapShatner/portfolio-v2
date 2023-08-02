@@ -34,5 +34,6 @@ export async function sendMessage(formData: MessageFormData) {
   await sgMail.send(msg)
  } catch (error) {
   console.error(error)
+  return error
  }
 }

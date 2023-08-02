@@ -28,7 +28,7 @@ const Email: FC<EmailProps> = () => {
    <button
     onClick={handleCopy}
     className='ml-auto mt-2 flex gap-2 w-48 text-lg text-text-hl items-center justify-center cursor-pointer p-1 border-2 border-text-hl font-secondary opacity-60 hover:opacity-100 focus-within:opacity-100 focus-visible:outline-text-hl'>
-    {copied ? 'Done!' : 'Copy address'}
+    {copied ? 'Copied!' : 'Copy address'}
     <Image
      src={'/copy-px-bl.png'}
      width={20}

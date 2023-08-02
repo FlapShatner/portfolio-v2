@@ -3,7 +3,11 @@
 import { MessageFormData, formDataSchema, sendMessage } from '@/utils/helpers'
 
 export async function submitMessageForm(formData: MessageFormData) {
- formDataSchema.parse(formData)
- await sendMessage(formData)
- console.log(formData)
+ try {
+  formDataSchema.parse(formData)
+  await sendMessage(formData)
+ } catch (error) {
+  console.error(error)
+  return error
+ }
 }

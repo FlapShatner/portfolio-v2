@@ -1,15 +1,18 @@
 'use client'
 import { FC } from 'react'
-
+import { SyncLoader } from 'react-spinners'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { formDataSchema, MessageFormData } from '@/utils/helpers'
 import { submitMessageForm } from '@/utils/actions'
+import { useState } from 'react'
 
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => {
  const heading = "Let's talk!"
+ const [isSuccess, setIsSuccess] = useState(false)
+ const [isError, setIsError] = useState(false)
 
  const {
   register,
@@ -17,9 +20,25 @@ const Contact: FC<ContactProps> = () => {
   reset,
   formState: { errors, isSubmitting },
  } = useForm<MessageFormData>({
-  shouldUseNativeValidation: true,
   resolver: zodResolver(formDataSchema),
  })
+
+ const onSubmit = async (data: MessageFormData) => {
+  await submitMessageForm(data)
+  setIsSuccess(true)
+  setTimeout(() => {
+   setIsSuccess(false)
+  }, 4000)
+  reset()
+ }
+
+ const onError = (errors: any) => {
+  console.log(errors)
+  setIsError(true)
+  setTimeout(() => {
+   setIsError(false)
+  }, 4000)
+ }
 
  const inputClasses = 'text-base p-2 bg-bg-primary border-2 border-white focus-visible:ring-2 focus-visible:ring-white focus-within:outline-none font-secondary'
 
@@ -27,10 +46,14 @@ const Contact: FC<ContactProps> = () => {
   <div className='bg-bg-secondary w-full px-6 pb-6 '>
    <h2 className='text-center p-4 text-2xl font-primary'>{heading}</h2>
    <form
-    onSubmit={handleSubmit(async (data) => {
-     await submitMessageForm(data)
-     reset()
-    })}>
+    onSubmit={(e) =>
+     handleSubmit(
+      onSubmit,
+      onError
+     )(e).catch((e) => {
+      console.log(e)
+     })
+    }>
     <div className='flex flex-col md:flex-row md:gap-8'>
      <div className='flex flex-col pb-2 pt-6 w-full'>
       {errors.name && <p className='text-xs text-red-600'>{errors.name?.message}</p>}
@@ -79,11 +102,17 @@ const Contact: FC<ContactProps> = () => {
       {...register('message')}
      />
     </div>
-    <div className='flex justify-end'>
+    <div className='flex flex-col justify-end'>
+     {isError && <p className='text-xs text-red-600 text-center'>Something went wrong, please try again.</p>}
      <button
       type='submit'
       className='text-base w-full bg-bg-secondary border-2 border-white py-2 px-4 hover:bg-bg-primary focus-visible:ring-2 focus-visible:ring-white focus-within:outline-none '>
-      Send
+      {isSuccess ? 'Sent!' : 'Send'}
+      <SyncLoader
+       loading={isSubmitting}
+       color='#fff'
+       size={10}
+      />
      </button>
     </div>
    </form>
