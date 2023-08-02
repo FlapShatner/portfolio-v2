@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 interface HeroProps {}
 
-const heroText = "Hi! I'm Jordan"
+const heroText = "Hi, I'm Jordan"
 
 const Hero: FC<HeroProps> = () => {
  return (

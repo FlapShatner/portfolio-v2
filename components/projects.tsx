@@ -27,7 +27,7 @@ const Projects: FC<ProjectsProps> = () => {
         />
        </a>
       </div>
-      <div className='lg:col-span-2 pt-4 pb-24 md:pb-4'>
+      <div className='lg:col-span-2 pt-4 pb-4 md:pb-4'>
        {project.description.map((p, i) => (
         <p
          className='text-base sm:text-lg lg:text-base xl:text-xl px-8 pb-2'
