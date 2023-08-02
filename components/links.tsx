@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image'
+import Icon from '@/components/icons'
 import { links } from '@/lib/links'
 import { twMerge } from 'tailwind-merge'
 
@@ -22,6 +23,10 @@ const Link: FC<LinkProps> = ({ title, url, isMobile }) => {
      'text-lg md:text-xl items-center flex gap-2 sm:gap-1 md:gap-2 text-white border-white border-2 px-2 opacity-70 hover:opacity-100 bg-bg-secondary font-secondary',
      isMobile && 'w-[300px] justify-center py-2'
     )}>
+    <Icon
+     iconName={title}
+     size={24}
+    />
     {title}
     <Image
      src={'/link.png'}
