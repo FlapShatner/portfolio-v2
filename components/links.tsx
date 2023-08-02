@@ -28,11 +28,9 @@ const Link: FC<LinkProps> = ({ title, url, isMobile }) => {
      size={24}
     />
     {title}
-    <Image
-     src={'/link.png'}
-     alt={''}
-     width={16}
-     height={16}
+    <Icon
+     iconName='Link'
+     size={18}
     />
    </div>
   </a>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useCopyToClipboard, useWindowSize } from 'usehooks-ts'
 
 import { FC, useState } from 'react'
+import Icon from './icons'
 
 interface EmailProps {}
 
@@ -30,14 +31,12 @@ const Email: FC<EmailProps> = () => {
    </a>
    <button
     onClick={handleCopy}
-    className='ml-auto mt-2 flex gap-2 text-xs md:text-lg px-2 text-text-hl items-center justify-center cursor-pointer border md:border-2 border-text-hl font-secondary opacity-60 hover:opacity-100 focus-within:opacity-100 focus-visible:outline-text-hl'>
-    {copied ? 'Copied!' : 'Copy'}
-    <Image
-     src={'/copy-px-bl.png'}
-     width={isMobile ? 12 : 18}
-     height={isMobile ? 12 : 18}
-     alt='Copy email address to clipboard'
+    className='ml-auto mt-2 flex gap-1 text-xs md:text-lg px-2 text-text-hl items-center justify-center cursor-pointer underline font-secondary opacity-60 hover:opacity-100 focus-within:opacity-100 focus-visible:outline-text-hl'>
+    <Icon
+     iconName='Copy'
+     size={isMobile ? 16 : 24}
     />
+    {copied ? 'Copied!' : 'Copy'}
    </button>
   </div>
  )
