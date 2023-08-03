@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import Image from 'next/image'
 import Icon from '@/components/icons'
 import { links } from '@/lib/links'
 import { twMerge } from 'tailwind-merge'
+import EmailLink from './emailLink'
 
 interface LinksProps {
  isMobile: boolean
@@ -13,6 +13,7 @@ interface LinkProps {
  title: string
  url: string
  isMobile: boolean
+ mailTo: boolean
 }
 
 const Link: FC<LinkProps> = ({ title, url, isMobile }) => {
@@ -50,8 +51,10 @@ const Links: FC<LinksProps> = ({ isMobile, open }) => {
      key={link.id}
      title={link.title}
      url={link.url}
+     mailTo={link.mailTo}
     />
    ))}
+   <EmailLink />
   </div>
  )
 }

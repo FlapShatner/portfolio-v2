@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { SyncLoader } from 'react-spinners'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { twMerge } from 'tailwind-merge'
 import { formDataSchema, MessageFormData } from '@/utils/helpers'
 import { submitMessageForm } from '@/utils/actions'
 import { useState } from 'react'
@@ -55,8 +56,8 @@ const Contact: FC<ContactProps> = () => {
      })
     }>
     <div className='flex flex-col md:flex-row md:gap-8'>
-     <div className='flex flex-col pb-2 pt-6 w-full'>
-      {errors.name && <p className='text-xs text-red-600'>{errors.name?.message}</p>}
+     <div className='flex flex-col pb-2 pt-2 w-full'>
+      <p className={twMerge('text-xs text-red-600', errors.name ? 'opacity-100' : 'opacity-0')}>{errors.name ? errors.name?.message : 'no error'}</p>
 
       <label
        className='text-base'
@@ -70,8 +71,8 @@ const Contact: FC<ContactProps> = () => {
        {...register('name')}
       />
      </div>
-     <div className='flex pb-2 flex-col pt-6 w-full'>
-      {errors.email && <p className='text-xs text-red-600'>{errors.email?.message}</p>}
+     <div className='flex pb-2 flex-col pt-2 w-full'>
+      <p className={twMerge('text-xs text-red-600', errors.email ? 'opacity-100' : 'opacity-0')}>{errors.email ? errors.email?.message : 'no error'}</p>
       <label
        className='text-base'
        htmlFor='email'>
@@ -86,14 +87,13 @@ const Contact: FC<ContactProps> = () => {
       />
      </div>
     </div>
-    <div className='flex pt-6 pb-4 flex-col'>
-     {errors.message && <p className='text-xs text-red-600'>{errors.message?.message}</p>}
+    <div className='flex pt-2 pb-4 flex-col'>
+     <p className={twMerge('text-xs text-red-600', errors.message ? 'opacity-100' : 'opacity-0')}>{errors.message ? errors.message?.message : 'no error'}</p>
      <label
       className='text-base'
       htmlFor='message'>
       Your message:
      </label>
-
      <textarea
       className='text-base p-2 w-full bg-bg-primary border-2 border-white  focus-visible:ring-2 focus-visible:ring-white focus-within:outline-none font-secondary'
       id='message'
@@ -103,7 +103,7 @@ const Contact: FC<ContactProps> = () => {
      />
     </div>
     <div className='flex flex-col justify-end'>
-     {isError && <p className='text-xs text-red-600 text-center'>Something went wrong, please try again.</p>}
+     <p className={twMerge('text-xs text-red-600 text-center', isError ? 'opacity-100' : 'opacity-0')}>Something went wrong, please try again.</p>
      <button
       type='submit'
       className='text-base w-full bg-bg-secondary border-2 border-white py-2 px-4 hover:bg-bg-primary focus-visible:ring-2 focus-visible:ring-white focus-within:outline-none '>

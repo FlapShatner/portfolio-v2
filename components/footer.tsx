@@ -8,7 +8,9 @@ const Footer: FC<FooterProps> = () => {
   <div className='pt-6 text-xs md:text-sm flex justify-between items-center w-full font-secondary'>
    <a
     href='#'
-    className='flex items-center gap-1 text-text-hl underline'>
+    className='flex items-center gap-1 text-text-hl underline'
+    target='_blank'
+    rel='noopener noreferrer'>
     Old Portfolio
     <Icon
      iconName='Link'
@@ -20,7 +22,9 @@ const Footer: FC<FooterProps> = () => {
    </div>
    <a
     href='https://github.com/FlapShatner/portfolio-v2'
-    className='flex gap-1 items-center'>
+    className='flex gap-1 items-center'
+    target='_blank'
+    rel='noopener noreferrer'>
     <Icon
      iconName='Github'
      size={28}

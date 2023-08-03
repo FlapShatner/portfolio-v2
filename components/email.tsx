@@ -1,9 +1,7 @@
 'use client'
-import Image from 'next/image'
 import { useCopyToClipboard, useWindowSize } from 'usehooks-ts'
-
+import { twMerge } from 'tailwind-merge'
 import { FC, useState } from 'react'
-import Icon from './icons'
 
 interface EmailProps {}
 
@@ -23,21 +21,13 @@ const Email: FC<EmailProps> = () => {
  }
 
  return (
-  <div className='py-12'>
-   <a
-    className=' text-text-hl underline clamped'
-    href='mailto:jordan@jrobertsweb.dev'>
-    jordan@jrobertsweb.dev
-   </a>
-   <button
+  <div className='py-12 flex flex-col '>
+   <span className={twMerge('text-center', copied ? 'opacity-100' : 'opacity-0')}>copied!</span>
+   <span
     onClick={handleCopy}
-    className='ml-auto mt-2 flex gap-1 text-xs md:text-lg px-2 text-text-hl items-center justify-center cursor-pointer underline font-secondary opacity-60 hover:opacity-100 focus-within:opacity-100 focus-visible:outline-text-hl'>
-    <Icon
-     iconName='Copy'
-     size={isMobile ? 16 : 24}
-    />
-    {copied ? 'Copied!' : 'Copy'}
-   </button>
+    className='cursor-pointer  text-text-hl underline clamped'>
+    jordan@jrobertsweb.dev
+   </span>
   </div>
  )
 }
