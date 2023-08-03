@@ -4,6 +4,7 @@ import { SyncLoader } from 'react-spinners'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { twMerge } from 'tailwind-merge'
+import { useWindowSize } from 'usehooks-ts'
 import { formDataSchema, MessageFormData } from '@/utils/helpers'
 import { submitMessageForm } from '@/utils/actions'
 import { useState } from 'react'
@@ -14,6 +15,10 @@ const Contact: FC<ContactProps> = () => {
  const heading = "Let's talk!"
  const [isSuccess, setIsSuccess] = useState(false)
  const [isError, setIsError] = useState(false)
+
+ const { width } = useWindowSize()
+
+ const isMobile = width < 680
 
  const {
   register,
@@ -98,7 +103,7 @@ const Contact: FC<ContactProps> = () => {
       className='text-base p-2 w-full bg-bg-primary border-2 border-white  focus-visible:ring-2 focus-visible:ring-white focus-within:outline-none font-secondary'
       id='message'
       cols={30}
-      rows={10}
+      rows={isMobile ? 5 : 10}
       {...register('message')}
      />
     </div>
