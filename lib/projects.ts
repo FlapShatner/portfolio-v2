@@ -2,11 +2,11 @@ export const projects = [
  {
   title: 'Link Pile',
   description: [
-   'Flapsh.at is a linktree inspired single page website. It is written in Typescript. The page is statically rendered using Next.js and deployed with Vercel.com.',
+   'jrr.at is a linktree inspired single page website. It is written in Typescript. The page is statically rendered using Next.js and deployed with Vercel.com.',
   ],
   image: '/flap.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS'],
-  liveUrl: 'https://flapsh.at',
+  liveUrl: 'https://jrr.at',
   srcUrl: 'https://github.com/FlapShatner/link-pile',
  },
  {
