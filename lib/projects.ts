@@ -44,7 +44,7 @@ export const projects = [
   title: 'Image Vault',
   description: [
    'Image Vault is a collaborative project built for organizations to store and share images.',
-   'The app is written in Typescript using the Next.js framework. It uses MongoDB as a database, AWS S3 for image storage, NextAuth for authentication, and is deployed on Vercel.',
+   'The app is written in Typescript using Next.js. It uses MongoDB as a database, AWS S3 for image storage, NextAuth for authentication, and is deployed on Vercel.',
   ],
   image: '/vault.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'MongoDB', 'Prisma', 'AWS S3', 'NextAuth'],

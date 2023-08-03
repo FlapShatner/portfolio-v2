@@ -21,7 +21,7 @@ const Email: FC<EmailProps> = () => {
  }
 
  return (
-  <div className='py-12 flex flex-col '>
+  <div className='pb-12 pt-6 flex flex-col '>
    <span className={twMerge('text-center', copied ? 'opacity-100' : 'opacity-0')}>copied!</span>
    <span
     onClick={handleCopy}

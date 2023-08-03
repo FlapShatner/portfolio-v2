@@ -4,6 +4,7 @@ import Projects from '@/components/projects'
 import Email from '@/components/email'
 import Contact from '@/components/contact'
 import Footer from '@/components/footer'
+import Mq from '@/components/mediaQueryDisplay'
 
 export default function Home() {
  return (
@@ -16,6 +17,7 @@ export default function Home() {
      <Email />
      <Contact />
      <Footer />
+     <Mq />
     </div>
    </main>
   </div>

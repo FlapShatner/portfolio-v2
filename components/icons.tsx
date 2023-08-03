@@ -103,6 +103,21 @@ const Icon: FC<IconsProps> = ({ iconName, size }) => {
   )
  }
 
+ const DownIcon = () => {
+  return (
+   <svg
+    width={size}
+    height={size}
+    viewBox='0 0 24 24'
+    xmlns='http://www.w3.org/2000/svg'>
+    <path
+     fill='currentColor'
+     d='M7 8H5v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2h-2v-2H9v-2H7V8z'
+    />
+   </svg>
+  )
+ }
+
  return (
   <>
    {iconName === 'Github' && <GithubIcon />}
@@ -111,6 +126,7 @@ const Icon: FC<IconsProps> = ({ iconName, size }) => {
    {iconName === 'Email' && <EmailIcon />}
    {iconName === 'Copy' && <CopyIcon />}
    {iconName === 'Link' && <LinkIcon />}
+   {iconName === 'Down' && <DownIcon />}
   </>
  )
 }
