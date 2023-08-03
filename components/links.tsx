@@ -18,7 +18,10 @@ interface LinkProps {
 
 const Link: FC<LinkProps> = ({ title, url, isMobile }) => {
  return (
-  <a href={url}>
+  <a
+   href={url}
+   target='_blank'
+   rel='noopener noreferrer'>
    <div
     className={twMerge(
      'text-lg md:text-xl items-center flex gap-2 sm:gap-1 md:gap-2 text-white border-white border-2 px-2 opacity-70 hover:opacity-100 bg-bg-secondary font-secondary',
