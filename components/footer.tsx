@@ -7,7 +7,7 @@ const Footer: FC<FooterProps> = () => {
  return (
   <div className='pt-6 text-xs md:text-sm flex justify-between items-center w-full font-secondary'>
    <a
-    href='#'
+    href='https://old.jrobertsweb.dev'
     className='flex items-center gap-1 text-text-hl underline'
     target='_blank'
     rel='noopener noreferrer'>
