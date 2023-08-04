@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image'
+import HeroLink from './heroLink'
 
 interface HeroProps {}
 
@@ -19,13 +20,7 @@ const Hero: FC<HeroProps> = () => {
     <p className='text-xl md:text-lg lg:text-2xl'>A web developer </p>
     <p className='text-base md:text-sm lg:text-lg'>from Springfield, MO</p>
     <p className='mt-7'>
-     I make{' '}
-     <a
-      className='text-text-hl underline hover:text-text-hl-hover'
-      href='https://github.com/FlapShatner'>
-      things
-     </a>{' '}
-     for the Internet
+     I make <HeroLink /> for the Internet
     </p>
    </div>
   </div>

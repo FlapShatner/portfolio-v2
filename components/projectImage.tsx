@@ -15,7 +15,7 @@ const ProjectImage: FC<ProjectImageProps> = ({ project }) => {
    target='_blank'
    rel='noopener noreferrer'
    onClick={() => {
-    va.track('Live link', { project: project.title })
+    va.track('Live link', { project: project.title, url: project.liveUrl })
    }}>
    <div className='absolute flex justify-center items-center top-0 left-0 w-full h-full bg-bg-primary opacity-0 hover:opacity-70 text-3xl'>Visit</div>
    <Image

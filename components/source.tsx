@@ -17,7 +17,7 @@ const Source: FC<SourceProps> = ({ project }) => {
    target='_blank'
    rel='noopener noreferrer'
    onClick={() => {
-    va.track('Source link', { project: project.title })
+    va.track('Source link', { project: project.title, url: project.srcUrl })
    }}>
    <Icon
     iconName='Github'
