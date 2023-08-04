@@ -62,3 +62,12 @@ export const projects = [
   srcUrl: 'https://github.com/FlapShatner/bkmks',
  },
 ]
+
+export interface Project {
+ title: string
+ description: string[]
+ image: string
+ tags: string[]
+ liveUrl: string
+ srcUrl: string
+}

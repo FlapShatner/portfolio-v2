@@ -3,6 +3,7 @@ import Icon from '@/components/icons'
 import { links } from '@/lib/links'
 import { twMerge } from 'tailwind-merge'
 import EmailLink from './emailLink'
+import va from '@vercel/analytics'
 
 interface LinksProps {
  isMobile: boolean

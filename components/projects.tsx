@@ -3,6 +3,8 @@ import { projects } from '@/lib/projects'
 import Image from 'next/image'
 import Icon from '@/components/icons'
 import Tags from './tags'
+import Source from './source'
+import ProjectImage from './projectImage'
 
 interface ProjectsProps {}
 
@@ -37,18 +39,7 @@ const Projects: FC<ProjectsProps> = () => {
       className='relative bg-bg-secondary flex flex-col lg:grid lg:grid-cols-4  '
       key={project.title}>
       <div className='border-4 border-white m-8 lg:m-0 lg:col-span-2 relative '>
-       <a
-        href={project.liveUrl}
-        target='_blank'
-        rel='noopener noreferrer'>
-        <div className='absolute flex justify-center items-center top-0 left-0 w-full h-full bg-bg-primary opacity-0 hover:opacity-70 text-3xl'>Visit</div>
-        <Image
-         src={project.image}
-         alt={`Screenshot of ${project.title}`}
-         width={1169}
-         height={838}
-        />
-       </a>
+       <ProjectImage project={project} />
       </div>
       <div className='lg:col-span-2 pt-4 pb-4 md:pb-4'>
        {project.description.map((p, i) => (
@@ -59,17 +50,7 @@ const Projects: FC<ProjectsProps> = () => {
         </p>
        ))}
        <Tags tags={project.tags} />
-       <a
-        className='absolute right-8 bottom-1 flex gap-1 text-text-hl justify-end hover:text-text-hl-hover'
-        href={project.srcUrl}
-        target='_blank'
-        rel='noopener noreferrer'>
-        <Icon
-         iconName='Github'
-         size={24}
-        />
-        <span className='underline'>Source code</span>
-       </a>
+       <Source project={project} />
       </div>
      </div>
     ))}
