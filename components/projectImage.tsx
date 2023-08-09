@@ -21,8 +21,9 @@ const ProjectImage: FC<ProjectImageProps> = ({ project }) => {
    <Image
     src={project.image}
     alt={`Screenshot of ${project.title}`}
-    width={1169}
-    height={838}
+    width={873}
+    height={626}
+    blurDataURL={project.blur}
    />
   </a>
  )

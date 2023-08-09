@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import Image from 'next/image'
 import HeroLink from './heroLink'
+import avatar from './images/pixel-pshop.png'
 
 interface HeroProps {}
 
@@ -10,10 +11,11 @@ const Hero: FC<HeroProps> = () => {
  return (
   <div className='flex flex-col items-center w-full gap-0 bg-bg-secondary py-6 md:py-0 md:justify-around md:flex-row md:items-start'>
    <Image
-    src={'/pixel-pshop.png'}
+    src={avatar}
     alt={"Author's avatar image"}
     width={342}
     height={336}
+    priority={true}
    />
    <div className='flex flex-col text-center md:text-start'>
     <h1 className='my-6 md:mt-16 md:mb-12 text-2xl lg:text-4xl '>{heroText}</h1>
