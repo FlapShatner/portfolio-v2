@@ -1,5 +1,18 @@
 export const projects = [
  {
+  title: 'Remindas',
+  description: [
+   'Remindas is a web app for creating and storing reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
+   'The app is deployed on Vercel and uses TailwindCSS and Shadcn/ui for UI components.',
+  ],
+  image: '/remindas.png',
+  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Prisma', 'Clerk', 'MySQL'],
+  liveUrl: 'https://remindas.vercel.app',
+  srcUrl: 'https://github.com/FlapShatner/remindas',
+  blur:
+   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
+ },
+ {
   title: 'Link Pile',
   description: [
    'jrr.at is a linktree inspired single page website. It is written in Typescript. The page is statically rendered using Next.js and deployed with Vercel.com.',
@@ -29,7 +42,7 @@ export const projects = [
    'Notes is a Google Keep inspired web app for making and reading notes. Users can create an account using Google oauth after which they can use a text editor to write rich-text notes with searchable tags which are saved into their account to retrieve later.',
   ],
   image: '/notes.png',
-  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'Prisma', 'Google Oauth', 'NextAuth', 'TailwindCSS'],
+  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'Prisma', 'Google Oauth', 'NextAuth', 'TailwindCSS', 'PostgreSQL'],
   liveUrl: 'https://notes-typescript.vercel.app/',
   srcUrl: 'https://github.com/FlapShatner/notes-typescript',
   blur:
