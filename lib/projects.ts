@@ -2,7 +2,7 @@ export const projects = [
  {
   title: 'Remindas',
   description: [
-   'Remindas is a web app for creating and storing reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
+   'Remindas is a web app for scheduling and sending reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
    'The app is deployed on Vercel and uses TailwindCSS and Shadcn/ui for UI components.',
   ],
   image: '/remindas.png',
