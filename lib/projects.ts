@@ -13,14 +13,14 @@ export const projects = [
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
  },
  {
-  title: 'Link Pile',
+  title: 'Ink Monkey Storefront',
   description: [
-   'jrr.at is a linktree inspired single page website. It is written in Typescript. The page is statically rendered using Next.js and deployed with Vercel.com.',
+   'This is the storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js.',
   ],
-  image: '/flap.png',
+  image: '/jrr.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS'],
   liveUrl: 'https://jrr.at',
-  srcUrl: 'https://github.com/FlapShatner/link-pile',
+  srcUrl: 'https://github.com/FlapShatner/inkmonkey',
   blur:
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAt0lEQVQYlXXOO07DQABF0fvmYyfBBUIgUmRnWTUrYAFUgMexx59HExGQoL3F0dXL+VxQr/AR28/QFIWBUKRh24ZtLVIhBGwDpubucnh6C9PrpV/2j1u+A2MMCUmAAJpde2iPz/dJbsZaQAjBTQLqOHWp67SvUwW+pXCTpJgSYDvGeK1CkLAtYUKKD6fjaM/v/S7nsfZgLOv307ostc4xRrYV+ONJErYkBeUm/fNkQkqpyTZzXX5KXxicW8/Abeo5AAAAAElFTkSuQmCC',
  },
