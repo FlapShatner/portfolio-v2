@@ -1,24 +1,24 @@
 export const projects = [
  {
-  title: 'Remindas',
+  title: 'Jot',
   description: [
-   'Remindas is a web app for scheduling and sending reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
-   'The app is deployed on Vercel and uses TailwindCSS and Shadcn/ui for UI components.',
+   'Jot is a web app for quickly taking and managing notes. It uses a PostgreSQL database, lucia as an auth solution, drizzle ORM for database interaction, and is hosted on Vercel. It features a text/code editor with syntax highlighting, a basic folder structure, and simple email and password authentication. It is a side project and a work in progress.',
   ],
-  image: '/remindas.png',
-  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Prisma', 'Clerk', 'MySQL'],
-  liveUrl: 'https://remindas.vercel.app',
-  srcUrl: 'https://github.com/FlapShatner/remindas',
+  image: '/jot.png',
+  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'drizzle', 'lucia', 'TailwindCSS', 'PostgreSQL'],
+  liveUrl: 'https://jot-fresh.vercel.app/',
+  srcUrl: 'https://github.com/FlapShatner/jot-fresh',
   blur:
-   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
+   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA60lEQVQYlWWQvU7EMBCEd70rx0lwLtJFQtCShpqWjmel5Qmo4RlOAhpEwd0VceIoSs5eU0RC/Ew381XfoHNd17mm2cLvPDy9tnFHKpXtDY6jjyJMtLIYIwAgolJqXUSEAaB3PSAeCrtbkimK29kRsebh8H5fV1m2uWMAqOsNAISkrlhRCkb700kkLJfNRRCbRDMAfO6PmcmPefnSTfmmapfH0VNV1O5D59YSKex6/7aPxOacA0+Bmed8EBGdyTA9kymtvuYEmBQRAUw0e1oUoUlLYKVDPLOA20SE4+i/tVNKq9qfO/hn+Y/XfAERGmR1QadrRAAAAABJRU5ErkJggg==',
  },
+
  {
   title: 'Ink Monkey Storefront',
   description: [
-   'This is the storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js.',
+   'jrr.at is a full-featured ecommerce storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js using the Shopify headless storefront API. Integrated with the store is an AI image generation tool using websockets to interact with an express server and Discord.',
   ],
   image: '/jrr.png',
-  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS'],
+  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Shopify', 'Express', 'Websockets'],
   liveUrl: 'https://jrr.at',
   srcUrl: 'https://github.com/FlapShatner/inkmonkey',
   blur:
@@ -37,16 +37,17 @@ export const projects = [
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABSElEQVQYlQXBzUoCQRwA8P3vzM6O+5FR4gcukoUWSwpBl04hBB56jl6iYy/QO3Tt1qFzEBHRMUjEDV1T85Nd3NLdmXWn3w9q9bqh64QQxpjjdCARqqoCQhIAAHDOEUL46rJi5VOgoCSGDav4XnRz92pnbJBgtl4ENKCU4j9vYO4otpXESZatkmHCNSXdqJ3SkwyeofuXB42quBVYkWd503Rh19TTyJt/SXFvynxlzKu0jABRlWJZiKU3ef7pC5AX62garCIe5jdGxGL3rU0IjuMYr0LmLv2SaXKxGf+uQJIDtnzsvJsOdf1RSCJd17FsN5vHR4amFjVBRaRK4XV42z1IzydrZa+45uxMz+Hzaq5Rt3QMIEsfn61MydrPFhjWTB4bW6mRP+/JPi4aghLutp3BcNzvfnMZHSbis7Pcvih3ZW8mEeVp8Q/QzZuF9punHwAAAABJRU5ErkJggg==',
  },
  {
-  title: 'Notes App',
+  title: 'Remindas',
   description: [
-   'Notes is a Google Keep inspired web app for making and reading notes. Users can create an account using Google oauth after which they can use a text editor to write rich-text notes with searchable tags which are saved into their account to retrieve later.',
+   'Remindas is a web app for scheduling and sending reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
+   'The app is deployed on Vercel and uses TailwindCSS and Shadcn/ui for UI components.',
   ],
-  image: '/notes.png',
-  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'Prisma', 'Google Oauth', 'NextAuth', 'TailwindCSS', 'PostgreSQL'],
-  liveUrl: 'https://notes-typescript.vercel.app/',
-  srcUrl: 'https://github.com/FlapShatner/notes-typescript',
+  image: '/remindas.png',
+  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Prisma', 'Clerk', 'MySQL'],
+  liveUrl: 'https://remindas.vercel.app',
+  srcUrl: 'https://github.com/FlapShatner/remindas',
   blur:
-   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA60lEQVQYlWWQvU7EMBCEd70rx0lwLtJFQtCShpqWjmel5Qmo4RlOAhpEwd0VceIoSs5eU0RC/Ew381XfoHNd17mm2cLvPDy9tnFHKpXtDY6jjyJMtLIYIwAgolJqXUSEAaB3PSAeCrtbkimK29kRsebh8H5fV1m2uWMAqOsNAISkrlhRCkb700kkLJfNRRCbRDMAfO6PmcmPefnSTfmmapfH0VNV1O5D59YSKex6/7aPxOacA0+Bmed8EBGdyTA9kymtvuYEmBQRAUw0e1oUoUlLYKVDPLOA20SE4+i/tVNKq9qfO/hn+Y/XfAERGmR1QadrRAAAAABJRU5ErkJggg==',
+   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
  },
  {
   title: 'The Planets',
