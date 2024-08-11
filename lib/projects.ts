@@ -49,19 +49,7 @@ export const projects = [
   blur:
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
  },
- {
-  title: 'The Planets',
-  description: [
-   'The Planets is an app which displays facts and drawings about each planet in the solar system.',
-   "The site's design was based on a practice project from frontendmentor.com, and is written in JavaScript using the Next.js framework.",
-  ],
-  image: '/planets.png',
-  tags: ['Next.js', 'JavaScript', 'Vercel', 'React'],
-  liveUrl: 'https://planets-jrwd.vercel.app/planets/earth',
-  srcUrl: 'https://github.com/FlapShatner/planets',
-  blur:
-   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABFElEQVQYlYXPsUrDUBiG4e8/p0kaW41WcbCDAYWCUFQQKlVQizi5ungHLl6BdyPehIiLk5su3kCxjTGE1gRPz+lJfofq7LO/w0th2DXGpOkIf6SURMTMRASAmcnzNvEfWak0vMbK4cX10e6x1nGSJADa7Vav1x0MYqUmAKTjLO/f3AV8FtD63uXp6+O91rlSk35/KKUQQhgzFXNBuBhtYYJ+hOexN7/dAVCWrLXReqqUBiDMd7rRsOdXvFCDeBFaJQDq3GwFJ2vUaVZ3AEii2mqQ18uDNDZ59PD2dAtmyyqznyPz/mUiW05/71xvyfer49FwtiMEua5rrS2KghkCgOs6XGZ59uH7VSI4ToWZrbVSylnzA4sEe/KxPV95AAAAAElFTkSuQmCC',
- },
+
  {
   title: 'Image Vault',
   description: [

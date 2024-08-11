@@ -21,13 +21,12 @@ const Email: FC<EmailProps> = () => {
  }
 
  return (
-  <div className='pb-12 pt-6 flex flex-col '>
+  <div
+   onClick={handleCopy}
+   className='cursor-pointer group  flex flex-col hover:bg-text-hl my-16 px-6 pt-8 pb-6 rounded-lg'>
+   <h2 className='mb-4 text-center text-text-sec group-hover:text-bg-secondary text-2xl'>{`Email me:`}</h2>
+   <span className=' group-hover:text-bg-primary underline clamped'>jordan@jrobertsweb.dev</span>
    <span className={twMerge('text-center', copied ? 'opacity-100' : 'opacity-0')}>copied!</span>
-   <span
-    onClick={handleCopy}
-    className='cursor-pointer  text-text-hl underline clamped'>
-    jordan@jrobertsweb.dev
-   </span>
   </div>
  )
 }

@@ -12,6 +12,7 @@ module.exports = {
     'bg-secondary': '#2A323D',
     'text-hl': '#65acca',
     'text-hl-hover': '#47bbec',
+    'text-sec': '#ffffffc1',
    },
    fontFamily: {
     primary: ['var(--ps)'],
