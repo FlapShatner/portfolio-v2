@@ -2,9 +2,9 @@ export const projects = [
  {
   title: 'Jot',
   description: [
-   'Jot is a web app for quickly taking and managing notes. It uses a PostgreSQL database, lucia as an auth solution, drizzle ORM for database interaction, and is hosted on Vercel. It features a text/code editor with syntax highlighting, a basic folder structure, and simple email and password authentication. It is a side project and a work in progress.',
+   'Jot is a web app for quickly taking and managing notes. It uses a PostgreSQL database, lucia as an auth solution, drizzle ORM for database interaction, and is hosted on Vercel. It features a text/code editor with syntax highlighting, a basic folder structure with real-time search, and simple email and password authentication. It is a side project and a work in progress.',
   ],
-  image: '/jot.png',
+  image: '/jot2.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'drizzle', 'lucia', 'TailwindCSS', 'PostgreSQL'],
   liveUrl: 'https://jot-fresh.vercel.app/',
   srcUrl: 'https://github.com/FlapShatner/jot-fresh',
@@ -15,12 +15,12 @@ export const projects = [
  {
   title: 'Ink Monkey Storefront',
   description: [
-   'jrr.at is a full-featured ecommerce storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js using the Shopify headless storefront API. Integrated with the store is an AI image generation tool using websockets to interact with an express server and Discord.',
+   'ink-monkey.com is a full-featured ecommerce storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js using the Shopify headless storefront API. Integrated with the store is an AI image generation tool using websockets to interact with an express server and Discord.',
   ],
   image: '/jrr.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Shopify', 'Express', 'Websockets'],
-  liveUrl: 'https://jrr.at',
-  srcUrl: 'https://github.com/FlapShatner/inkmonkey',
+  liveUrl: 'https://www.ink-monkey.com/',
+  srcUrl: 'https://github.com/ink-monkey-llc/inkmonkey',
   blur:
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAt0lEQVQYlXXOO07DQABF0fvmYyfBBUIgUmRnWTUrYAFUgMexx59HExGQoL3F0dXL+VxQr/AR28/QFIWBUKRh24ZtLVIhBGwDpubucnh6C9PrpV/2j1u+A2MMCUmAAJpde2iPz/dJbsZaQAjBTQLqOHWp67SvUwW+pXCTpJgSYDvGeK1CkLAtYUKKD6fjaM/v/S7nsfZgLOv307ostc4xRrYV+ONJErYkBeUm/fNkQkqpyTZzXX5KXxicW8/Abeo5AAAAAElFTkSuQmCC',
  },
@@ -50,19 +50,6 @@ export const projects = [
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
  },
 
- {
-  title: 'Image Vault',
-  description: [
-   'Image Vault is a collaborative project built for organizations to store and share images.',
-   'The app is written in Typescript using Next.js. It uses MongoDB as a database, AWS S3 for image storage, NextAuth for authentication, and is deployed on Vercel.',
-  ],
-  image: '/vault.png',
-  tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'MongoDB', 'Prisma', 'AWS S3', 'NextAuth'],
-  liveUrl: 'https://v44-tier3-team-37-vercel.vercel.app/',
-  srcUrl: 'https://github.com/chingu-voyages/v44-tier3-team-37',
-  blur:
-   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABQ0lEQVQYlW3BTUvCYBwA8P+ePU/T2aY+0zVfDjOLypslUVHUIfAU9AH6bl2iPAXVvQ5FCGlkoahBIhSaQ0Xny6Z76Qv0+zGZ/SxinOFgCP9h8YJHkLDD0elEx4KSiNJEXHKI9+b2zs+7PjG2tZmWKL1/fscAYFvz+UxXaFxOyFQKVV7HyJra3CK2dDWyzHEEAYA1NxHLAriqSIK897veqRZbxDAcx8nn86ZpYnDdsyPZmQYKpfJ586fdbiWVdTEV0r10V464G+n6xTUCcKWllYmXk0MiTxw1Fh6Ne/FoOKg1Ip9F5fGG2DPsArw9FAxCer9apdsVBWEwNPxfdYlBw9Q2Yxp2rYYxi5GabFTrmcPjFAsHEn/50VhbTWrdflOkV7mcwVLMMHB6kk0SU+Qh47ECezujp5ee5mMZVC4VRv0OCop/cF6DnVMQR88AAAAASUVORK5CYII=',
- },
  {
   title: 'BKMKS',
   description: [
