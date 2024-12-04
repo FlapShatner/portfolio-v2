@@ -15,6 +15,6 @@ export const links = [
   id: 3,
   title: 'Bluesky',
   mailTo: false,
-  url: 'https://bsky.app/profile/jrobertsweb.dev',
+  url: 'https://bsky.app/profile/jroberts.dev',
  },
 ]
