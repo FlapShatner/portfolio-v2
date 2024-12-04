@@ -13,14 +13,8 @@ export const links = [
  },
  {
   id: 3,
-  title: 'Twitter',
+  title: 'Bluesky',
   mailTo: false,
-  url: 'https://twitter.com/jRobertsWebDev',
+  url: 'https://bsky.app/profile/jrobertsweb.dev',
  },
- //  {
- //   id: 4,
- //   title: 'Email',
- //   mailTo: true,
- //   url: 'mailto:jordan@jrobertsweb.dev',
- //  },
 ]

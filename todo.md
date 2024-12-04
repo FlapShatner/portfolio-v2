@@ -1,7 +1,6 @@
 # Portfolio Refresh Todo
 
 - New screenshot for Jot
-- Switch twitter for bluesky
 - Update bio
 - New cool interactions
 - Add modal with project details
@@ -10,3 +9,7 @@
 - Add resume page
 - Add download resume button
 - Add fonz?
+
+## Done
+
+- Switch twitter for bluesky

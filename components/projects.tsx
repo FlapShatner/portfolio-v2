@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { projects } from '@/lib/projects'
+import { twMerge } from 'tailwind-merge'
 import Image from 'next/image'
 import Icon from '@/components/icons'
 import Tags from './tags'
@@ -38,7 +39,9 @@ const Projects: FC<ProjectsProps> = () => {
      <div
       className='relative bg-bg-secondary flex flex-col lg:grid lg:grid-cols-4  '
       key={project.title}>
-      <div className='border-4 border-white m-8 lg:m-0 lg:col-span-2 relative '>
+      <div
+       style={{ backgroundColor: project.bg && project.bg }}
+       className='border-4 border-white m-8 lg:m-0 lg:col-span-2 relative'>
        <ProjectImage project={project} />
       </div>
       <div className='lg:col-span-2 pt-4 pb-4 md:pb-4'>

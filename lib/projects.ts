@@ -4,12 +4,13 @@ export const projects = [
   description: [
    'Jot is a web app for quickly taking and managing notes. It uses a PostgreSQL database, lucia as an auth solution, drizzle ORM for database interaction, and is hosted on Vercel. It features a text/code editor with syntax highlighting, a basic folder structure with real-time search, and simple email and password authentication. It is a side project and a work in progress.',
   ],
-  image: '/jot2.png',
+  image: '/jot-ss.png',
   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'drizzle', 'lucia', 'TailwindCSS', 'PostgreSQL'],
   liveUrl: 'https://jot-fresh.vercel.app/',
   srcUrl: 'https://github.com/FlapShatner/jot-fresh',
   blur:
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA60lEQVQYlWWQvU7EMBCEd70rx0lwLtJFQtCShpqWjmel5Qmo4RlOAhpEwd0VceIoSs5eU0RC/Ew381XfoHNd17mm2cLvPDy9tnFHKpXtDY6jjyJMtLIYIwAgolJqXUSEAaB3PSAeCrtbkimK29kRsebh8H5fV1m2uWMAqOsNAISkrlhRCkb700kkLJfNRRCbRDMAfO6PmcmPefnSTfmmapfH0VNV1O5D59YSKex6/7aPxOacA0+Bmed8EBGdyTA9kymtvuYEmBQRAUw0e1oUoUlLYKVDPLOA20SE4+i/tVNKq9qfO/hn+Y/XfAERGmR1QadrRAAAAABJRU5ErkJggg==',
+  bg: '#282C34',
  },
 
  {
@@ -51,14 +52,14 @@ export const projects = [
  },
 
  {
-  title: 'BKMKS',
+  title: 'The Calendar',
   description: [
-   'BKMKS is a browser extension built with React and JavaScript which allows users to save and organize bookmarks. It is currently in development and the source code is available on GitHub.',
+   `The Calendar is a progressive web app built to specifications for a client. It connects to a user's Google Calendar and displays their events in a custom UI alongside daily weather information. The user can view, edit, or delete their events and customize the app's color theme. It is written in Typescript and uses Next.js for server-side rendering. The app is hosted on Vercel and uses TailwindCSS for styling.`,
   ],
-  image: '/bkmks.png',
-  tags: ['React', 'Javascript', 'Chrome Extension'],
-  liveUrl: 'https://github.com/FlapShatner/bkmks',
-  srcUrl: 'https://github.com/FlapShatner/bkmks',
+  image: '/cal.png',
+  tags: ['Next.js', 'Typescript', 'Google Apis', 'Vercel', 'TailwindCSS'],
+  liveUrl: 'https://im-calendar.vercel.app/cal',
+  srcUrl: 'https://github.com/ink-monkey-llc/calendar',
   blur:
    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAi0lEQVQImVXJSwrCUBBE0apOdz46FbIV3YD734cgEiOa5L0uJyJ6B2dyeTydr7fLOB6maSllTVVJ7h4eqfT5cc8skNoOW0mSJDNzWRcALmV4DyK83Q1KQVLWBFFKdYAACCK71zITFPSRNADb9owIQEYj+dVoRjJiANm1+6YJ/mcAwnsAVdMwuJn97jcGt0H/yVwWJQAAAABJRU5ErkJggg==',
  },
@@ -72,4 +73,5 @@ export interface Project {
  liveUrl: string
  srcUrl: string
  blur: string
+ bg?: string
 }

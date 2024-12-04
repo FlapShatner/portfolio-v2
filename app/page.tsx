@@ -2,7 +2,6 @@ import Menu from '@/components/menu'
 import Hero from '@/components/hero'
 import Projects from '@/components/projects'
 import Email from '@/components/email'
-import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
      <Hero />
      <Projects />
      <Email />
-     {/* <Contact /> */}
      <Footer />
     </div>
    </main>
