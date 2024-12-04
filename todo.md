@@ -1,6 +1,5 @@
 # Portfolio Refresh Todo
 
-- New screenshot for Jot
 - Update bio
 - New cool interactions
 - Add modal with project details
@@ -13,3 +12,4 @@
 ## Done
 
 - Switch twitter for bluesky
+- New screenshot for Jot
