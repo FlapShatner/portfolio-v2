@@ -27,7 +27,7 @@ const Links: FC<LinksProps> = ({ isMobile, open }) => {
                 !isMobile ? ' flex flex-row justify-end gap-6 lg:gap-8 w-full mb-6' : 'flex flex-col gap-6 items-end fixed right-2 bg-bg-primary p-6 border-2 border-white',
                 isMobile && !open ? 'hidden' : 'flex'
             )}>
-            <JrIcon size={32} className='mr-auto ml-10' />
+            {/* <JrIcon size={32} className='mr-auto ml-10' /> */}
             {links.map((link) => (
                 <Link
                     isMobile={isMobile}
