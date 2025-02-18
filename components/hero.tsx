@@ -10,8 +10,8 @@ const heroText = "Hi, I'm Jordan"
 
 const Hero: FC<HeroProps> = () => {
     return (
-        <div className='flex flex-col items-center w-full gap-0 bg-bg-secondary py-6 md:py-0 md:justify-around md:flex-row md:items-start'>
-            <CrtLogo className='w-80 my-12 mx-4' />
+        <div className='flex flex-col items-center w-full gap-0 bg-bg-secondary py-6 md:py-0 md:justify-center md:flex-row md:items-start'>
+            <CrtLogo className='w-80 my-12 mx-12' />
             {/* <Image
     src={avatar}
     alt={"Author's avatar image"}
