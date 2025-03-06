@@ -20,19 +20,26 @@ export const projects = [
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA60lEQVQYlWWQvU7EMBCEd70rx0lwLtJFQtCShpqWjmel5Qmo4RlOAhpEwd0VceIoSs5eU0RC/Ew381XfoHNd17mm2cLvPDy9tnFHKpXtDY6jjyJMtLIYIwAgolJqXUSEAaB3PSAeCrtbkimK29kRsebh8H5fV1m2uWMAqOsNAISkrlhRCkb700kkLJfNRRCbRDMAfO6PmcmPefnSTfmmapfH0VNV1O5D59YSKex6/7aPxOacA0+Bmed8EBGdyTA9kymtvuYEmBQRAUw0e1oUoUlLYKVDPLOA20SE4+i/tVNKq9qfO/hn+Y/XfAERGmR1QadrRAAAAABJRU5ErkJggg==',
     bg: '#282C34',
   },
-
-  //  {
-  //   title: 'Ink Monkey Storefront',
-  //   description: [
-  //    'ink-monkey.com is a full-featured ecommerce storefront built for a company called Ink Monkey LLC. It is written in TypeScript and built with Next.js using the Shopify headless storefront API. Integrated with the store is an AI image generation tool using websockets to interact with an express server and Discord.',
-  //   ],
-  //   image: '/jrr.png',
-  //   tags: ['Next.js', 'Typescript', 'Vercel', 'React', 'TailwindCSS', 'Shopify', 'Express', 'Websockets'],
-  //   liveUrl: 'https://www.ink-monkey.com/',
-  //   srcUrl: 'https://github.com/ink-monkey-llc/inkmonkey',
-  //   blur:
-  //    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAt0lEQVQYlXXOO07DQABF0fvmYyfBBUIgUmRnWTUrYAFUgMexx59HExGQoL3F0dXL+VxQr/AR28/QFIWBUKRh24ZtLVIhBGwDpubucnh6C9PrpV/2j1u+A2MMCUmAAJpde2iPz/dJbsZaQAjBTQLqOHWp67SvUwW+pXCTpJgSYDvGeK1CkLAtYUKKD6fjaM/v/S7nsfZgLOv307ostc4xRrYV+ONJErYkBeUm/fNkQkqpyTZzXX5KXxicW8/Abeo5AAAAAElFTkSuQmCC',
-  //  },
+  {
+    title: 'Ink Monkey Storefront',
+    description: [
+      'Ink-monkey.com is a fully custom eCommerce store built with TypeScript, Next.js, and Shopify Headless API. Other than broad design, I was responsible for every aspect of this complex web application. It integrates a Shopify store with thousands of products and variants, an AI image generation tool which allows user to generate and purchase designs as a printed vinyl decal or other printed product. Ink-monkey.com was developed from ideation to deployment in 9 months by myself.',
+    ],
+    image: '/im-prod.png',
+    tags: [
+      'Next.js',
+      'Typescript',
+      'Vercel',
+      'React',
+      'TailwindCSS',
+      'Shopify',
+      'Express',
+      'Websockets',
+    ],
+    liveUrl: 'https://www.ink-monkey.com/',
+    srcUrl: 'https://github.com/ink-monkey-llc/inkmonkey',
+    blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAt0lEQVQYlXXOO07DQABF0fvmYyfBBUIgUmRnWTUrYAFUgMexx59HExGQoL3F0dXL+VxQr/AR28/QFIWBUKRh24ZtLVIhBGwDpubucnh6C9PrpV/2j1u+A2MMCUmAAJpde2iPz/dJbsZaQAjBTQLqOHWp67SvUwW+pXCTpJgSYDvGeK1CkLAtYUKKD6fjaM/v/S7nsfZgLOv307ostc4xRrYV+ONJErYkBeUm/fNkQkqpyTZzXX5KXxicW8/Abeo5AAAAAElFTkSuQmCC',
+  },
   {
     title: 'JohnRoberts.design',
     description: [
