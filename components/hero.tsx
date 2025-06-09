@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import HeroLink from './heroLink';
-import avatar from './images/pixel-pshop.png';
+import avatar from './images/pixel-fixed-nobg.png';
 import CrtLogo from './crt-logo';
 
 interface HeroProps {}
