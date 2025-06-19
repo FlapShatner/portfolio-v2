@@ -52,6 +52,18 @@ export const projects = [
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABSElEQVQYlQXBzUoCQRwA8P3vzM6O+5FR4gcukoUWSwpBl04hBB56jl6iYy/QO3Tt1qFzEBHRMUjEDV1T85Nd3NLdmXWn3w9q9bqh64QQxpjjdCARqqoCQhIAAHDOEUL46rJi5VOgoCSGDav4XnRz92pnbJBgtl4ENKCU4j9vYO4otpXESZatkmHCNSXdqJ3SkwyeofuXB42quBVYkWd503Rh19TTyJt/SXFvynxlzKu0jABRlWJZiKU3ef7pC5AX62garCIe5jdGxGL3rU0IjuMYr0LmLv2SaXKxGf+uQJIDtnzsvJsOdf1RSCJd17FsN5vHR4amFjVBRaRK4XV42z1IzydrZa+45uxMz+Hzaq5Rt3QMIEsfn61MydrPFhjWTB4bW6mRP+/JPi4aghLutp3BcNzvfnMZHSbis7Pcvih3ZW8mEeVp8Q/QzZuF9punHwAAAABJRU5ErkJggg==',
   },
   {
+    title: 'InstaYoink',
+    description: [
+      'InstaYoink is a browser extension that allows you to download media from Instagram.',
+    ],
+    image: '/iy.png',
+    tags: ['Browser Extension', 'Typescript', 'Instagram API'],
+    liveUrl:
+      'https://chromewebstore.google.com/detail/instayoink/immfpkjakbknecheoampmdjpnigaoend',
+    srcUrl: 'https://github.com/FlapShatner/instayoink',
+    blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABSElEQVQYlQXBzUoCQRwA8P3vzM6O+5FR4gcukoUWSwpBl04hBB56jl6iYy/QO3Tt1qFzEBHRMUjEDV1T85Nd3NLdmXWn3w9q9bqh64QQxpjjdCARqqoCQhIAAHDOEUL46rJi5VOgoCSGDav4XnRz92pnbJBgtl4ENKCU4j9vYO4otpXESZatkmHCNSXdqJ3SkwyeofuXB42quBVYkWd503Rh19TTyJt/SXFvynxlzKu0jABRlWJZiKU3ef7pC5AX62garCIe5jdGxGL3rU0IjuMYr0LmLv2SaXKxGf+uQJIDtnzsvJsOdf1RSCJd17FsN5vHR4amFjVBRaRK4XV42z1IzydrZa+45uxMz+Hzaq5Rt3QMIEsfn61MydrPFhjWTB4bW6mRP+/JPi4aghLutp3BcNzvfnMZHSbis7Pcvih3ZW8mEeVp8Q/QzZuF9punHwAAAABJRU5ErkJggg==',
+  },
+  {
     title: 'Remindas',
     description: [
       'Remindas is a web app for scheduling and sending reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
