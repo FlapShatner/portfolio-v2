@@ -13,6 +13,7 @@ const Hero: FC<HeroProps> = () => {
     <div className="flex flex-col items-center w-full gap-0 bg-bg-secondary py-6 md:py-0 md:justify-center md:flex-row md:items-start">
       {/* <CrtLogo className='w-80 my-12 mx-12' /> */}
       <Image
+        className="contrast-75"
         src={avatar}
         alt={"Author's avatar image"}
         width={342}
