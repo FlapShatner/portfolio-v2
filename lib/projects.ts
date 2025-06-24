@@ -18,7 +18,7 @@ export const projects = [
     liveUrl: 'https://jot-fresh.vercel.app/',
     srcUrl: 'https://github.com/FlapShatner/jot-fresh',
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA60lEQVQYlWWQvU7EMBCEd70rx0lwLtJFQtCShpqWjmel5Qmo4RlOAhpEwd0VceIoSs5eU0RC/Ew381XfoHNd17mm2cLvPDy9tnFHKpXtDY6jjyJMtLIYIwAgolJqXUSEAaB3PSAeCrtbkimK29kRsebh8H5fV1m2uWMAqOsNAISkrlhRCkb700kkLJfNRRCbRDMAfO6PmcmPefnSTfmmapfH0VNV1O5D59YSKex6/7aPxOacA0+Bmed8EBGdyTA9kymtvuYEmBQRAUw0e1oUoUlLYKVDPLOA20SE4+i/tVNKq9qfO/hn+Y/XfAERGmR1QadrRAAAAABJRU5ErkJggg==',
-    bg: '#282C34',
+    bg: '#1e2227',
   },
   {
     title: 'Ink Monkey Storefront',
@@ -64,25 +64,24 @@ export const projects = [
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAABSElEQVQYlQXBzUoCQRwA8P3vzM6O+5FR4gcukoUWSwpBl04hBB56jl6iYy/QO3Tt1qFzEBHRMUjEDV1T85Nd3NLdmXWn3w9q9bqh64QQxpjjdCARqqoCQhIAAHDOEUL46rJi5VOgoCSGDav4XnRz92pnbJBgtl4ENKCU4j9vYO4otpXESZatkmHCNSXdqJ3SkwyeofuXB42quBVYkWd503Rh19TTyJt/SXFvynxlzKu0jABRlWJZiKU3ef7pC5AX62garCIe5jdGxGL3rU0IjuMYr0LmLv2SaXKxGf+uQJIDtnzsvJsOdf1RSCJd17FsN5vHR4amFjVBRaRK4XV42z1IzydrZa+45uxMz+Hzaq5Rt3QMIEsfn61MydrPFhjWTB4bW6mRP+/JPi4aghLutp3BcNzvfnMZHSbis7Pcvih3ZW8mEeVp8Q/QzZuF9punHwAAAABJRU5ErkJggg==',
   },
   {
-    title: 'Remindas',
+    title: 'Filedrop',
     description: [
-      'Remindas is a web app for scheduling and sending reminders. It uses a MySQL database, and Clerk for auth. Reminders are sent via SMS using Twilio.',
-      'The app is deployed on Vercel and uses TailwindCSS and Shadcn/ui for UI components.',
+      'Filedrop is a file-sharing service that allows users to upload files and receive a unique, shareable link. Built with React, it uses a Cloudflare Worker backend powered by Hono for handling API requests. The service stores uploaded files in Cloudflare R2 object storage and manages metadata in a Cloudflare D1 database. It automatically generates memorable URLs for sharing and includes a scheduled task to periodically clean up and delete expired files.',
     ],
-    image: '/remindas.png',
+    image: '/filedrop-lg.png',
     tags: [
-      'Next.js',
-      'Typescript',
-      'Vercel',
       'React',
-      'TailwindCSS',
-      'Prisma',
-      'Clerk',
-      'MySQL',
+      'Typescript',
+      'Cloudflare',
+      'Vite',
+      'Hono',
+      'Cloudflare R2',
+      'Cloudflare D1',
     ],
-    liveUrl: 'https://remindas.vercel.app',
-    srcUrl: 'https://github.com/FlapShatner/remindas',
+    liveUrl: 'https://filedrop.jrobertswebdev.workers.dev',
+    srcUrl: 'https://github.com/FlapShatner/filedrop',
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
+    bg: '#091a08',
   },
 
   {
@@ -95,6 +94,7 @@ export const projects = [
     liveUrl: 'https://im-calendar.vercel.app/cal',
     srcUrl: 'https://github.com/ink-monkey-llc/calendar',
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAIAAAC+zks0AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAi0lEQVQImVXJSwrCUBBE0apOdz46FbIV3YD734cgEiOa5L0uJyJ6B2dyeTydr7fLOB6maSllTVVJ7h4eqfT5cc8skNoOW0mSJDNzWRcALmV4DyK83Q1KQVLWBFFKdYAACCK71zITFPSRNADb9owIQEYj+dVoRjJiANm1+6YJ/mcAwnsAVdMwuJn97jcGt0H/yVwWJQAAAABJRU5ErkJggg==',
+    bg: '#1e1e1e',
   },
 ];
 
