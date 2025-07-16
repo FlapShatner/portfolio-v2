@@ -13,7 +13,7 @@ const Email: FC<EmailProps> = () => {
   const isMobile = width < 952;
 
   const handleCopy = () => {
-    copy('jordan@jrobertsweb.dev');
+    copy('jrobertswebdev@gmail.com');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
@@ -27,7 +27,7 @@ const Email: FC<EmailProps> = () => {
     >
       <h2 className="mb-4 text-center text-text-sec group-hover:text-bg-secondary text-2xl">{`Email me:`}</h2>
       <span className=" group-hover:text-bg-primary underline clamped">
-        jordan@jrobertsweb.dev
+        jrobertswebdev@gmail.com
       </span>
       <span
         className={twMerge('text-center', copied ? 'opacity-100' : 'opacity-0')}

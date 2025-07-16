@@ -10,7 +10,7 @@ const EmailLink: FC<EmailLinkProps> = () => {
   const { width } = useWindowSize();
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
-    copy('jordan@jrobertsweb.dev');
+    copy('jrobertswebdev@gmail.com');
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
