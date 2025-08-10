@@ -78,7 +78,7 @@ export const projects = [
       'Cloudflare R2',
       'Cloudflare D1',
     ],
-    liveUrl: 'https://filedrop.jrobertswebdev.workers.dev',
+    liveUrl: 'https://filedrop.verygre.at/',
     srcUrl: 'https://github.com/FlapShatner/filedrop',
     blur: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAACXBIWXMAAC4jAAAuIwF4pT92AAAApklEQVQYlW2OSw6CQBBEa34QwIgRdhqP4P2vJK5cqDNMf1wgYAy9qlReXrVpu0uMkYiwdSH4oiociRORuSrqpm72rYoyEQARySkbVx4nou+7IoTbcGfmP59fUoo0JrbwMHZqWPMU7AIR0fv1FpEQAgBjtkzOGxZlzjxmANAVWk05Z1U1dm5+VM766vsBc2na0+56KM+RnqxpYw4A6fiIAwDWpLrufQBNfFR2gfbZ/gAAAABJRU5ErkJggg==',
     bg: '#091a08',
